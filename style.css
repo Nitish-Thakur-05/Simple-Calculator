@@ -244,6 +244,14 @@ main {
         width: 60px;
         padding: 8px 15px;
     }
+
+    .reset {
+        width: inherit;
+    }
+    
+    .equal {
+        width: inherit;
+    }
 }
 
 
@@ -257,5 +265,13 @@ main {
     .button {
         width: 50px;
         padding: 8px 15px;
+    }
+
+    .reset {
+        width: inherit;
+    }
+    
+    .equal {
+        width: inherit;
     }
 }
