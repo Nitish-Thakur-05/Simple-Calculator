@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+body {
+    --background-color: hsl(0, 0%, 90%);
+    background-color: var(--background-color);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    user-select: none;
+}
+
+body.blue {
+    --background-color: hsl(222, 26%, 31%);
+}
+
+body.violet {
+    --background-color: hsl(268, 75%, 9%);
+}
+
+body.blue header{
+    color: white;
+}
+
+body.violet header{
+    color: hsl(52, 100%, 62%);
+}
+
+body.blue .white-space{
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+}
+
+body.violet .white-space{
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+
+body.blue .keys-container{
+    background-color: hsl(223, 31%, 20%);
+}
+
+body.violet .keys-container{
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+
+body.violet .button{
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 3px 3px 6px hsl(290, 70%, 36%);
+}
+
+body.blue .del{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: hsl(224, 28%, 35%);
+}
+
+body.violet .del{
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: hsl(285, 91%, 52%);
+}
+
+body.blue .reset{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 3px 3px 6px hsl(224, 28%, 35%);
+}
+
+body.violet .reset{
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 3px 3px 6px hsl(285, 91%, 52%);
+}
+
+body.blue .equal{
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 3px 3px 6px hsl(6, 70%, 34%);
+}
+
+body.violet .equal{
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 3px 3px 6px hsl(177, 92%, 70%);
+    color: black;
+}
+
+body.blue .theme-dot{
+    background-color: hsl(6, 63%, 50%);
+}
+
+body.violet .theme-dot{
+    background-color: hsl(268, 71%, 12%);
+}
+
+
+main {
+    max-width: 40%;
+    margin-inline: auto;
+    margin-block: 6%;
+}
+
+.theme-container {
+    position: relative;
+}
+
+.theme-container p {
+    font-size: 12px;
+}
+
+.theme-box {
+    width: 60px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: hsl(0, 5%, 81%);
+    padding-inline: 5px;
+}
+
+.theme1 {
+    position: absolute;
+    left: 53%;
+    bottom: 10%;
+    cursor: pointer;
+}
+
+.theme2 {
+    position: absolute;
+    left: 70%;
+    bottom: 10%;
+    cursor: pointer;
+}
+
+.theme3 {
+    position: absolute;
+    left: 88%;
+    bottom: 10%;
+    cursor: pointer;
+}
+
+.theme-dot {
+    width: 11px;
+    height: 11px;
+    background-color: hsl(25, 98%, 40%);
+    border-radius: 50%;
+}
+
+.theme-dot-2 {
+    margin-inline: 40%;
+}
+
+.theme-dot-3 {
+    margin-left: 80%;
+}
+
+.white-space {
+    background-color: hsl(0, 0%, 93%);
+    width: inherit;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.white-space p {
+    font-size: 3rem;
+}
+
+.keys-container {
+    background-color: hsl(0, 5%, 81%);
+    width: 100%;
+}
+
+.button-container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.button {
+    background-color: hsl(45, 7%, 89%);
+    padding: 8px 20px;
+    cursor: pointer;
+    width: 80px;
+    /* text-align: center; */
+    box-shadow: 3px 3px 6px hsl(35, 11%, 61%);
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.del {
+    background-color: hsl(185, 42%, 37%); 
+    box-shadow: 3px 3px 6px hsl(185, 58%, 25%); 
+    color:white;
+}
+
+
+.reset {
+    background-color: hsl(45, 7%, 89%);
+    padding: 8px 20px;
+    cursor: pointer;
+    width: inherit;
+    text-align: center;
+    box-shadow: 3px 3px 6px hsl(35, 11%, 61%);
+    border-radius: 5px;
+    background-color: hsl(185, 42%, 37%); 
+    box-shadow: 3px 3px 6px hsl(185, 58%, 25%); 
+    color:white;
+}
+
+.equal {
+    background-color: hsl(45, 7%, 89%);
+    padding: 8px 20px;
+    cursor: pointer;
+    width: inherit;
+    text-align: center;
+    box-shadow: 3px 3px 6px hsl(35, 11%, 61%);
+    border-radius: 5px;
+    background-color: hsl(25, 98%, 40%); 
+    box-shadow: 3px 3px 6px hsl(25, 99%, 27%); 
+    color:white;
+}
+
+
+
+
+
+
+
+/* media  */
+@media screen and (max-width:1025px) {
+    main {
+        max-width: 80%;
+        margin-inline: auto;
+        margin-block: 50%;
+    }
+
+    .button {
+        width: 60px;
+        padding: 8px 15px;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    main {
+        max-width: 80%;
+        margin-inline: auto;
+        margin-block: 50%;
+    }
+
+    .button {
+        width: 50px;
+        padding: 8px 15px;
+    }
+}
